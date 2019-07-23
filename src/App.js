@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{Component} from 'react';
+import axios from 'axios';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Header from './components/Header';
+class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            bannerImgClass:''
+        }
+    }
+
+    componentDidMount() {
+        this.getBannerImg();
+    }
+
+    getBannerImg = () => {
+        let bannerImgIDs = ['boracayBanner','elNidoBanner'];
+        let key = 0;
+        setInterval(() => {
+            this.setState({bannerImgClass:bannerImgIDs[key++ % bannerImgIDs.length]})
+        },3000)
+    }
+
+    render() {
+        const {bannerImgClass} = this.state;
+        return (
+            <div className="app">
+                <Header bannerImgClass={bannerImgClass}/>
+            </div>
+        );
+    }
 }
 
 export default App;
