@@ -12,8 +12,12 @@ const Header = (props) => {
                     <p>turistado</p>
                 </div>
 
-                <div className="searchForm">
+                <div className="searchFormContainer">
                     <h1>Where will you go next?</h1>
+                    <form>
+                        <input type="text" className="searchTextBox" name="place" placeholder="Start typing..."/>
+                        <button type="button" className="searchBtn">Go</button> 
+                    </form>
                 </div>
             </div>
         </div>

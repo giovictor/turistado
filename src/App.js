@@ -15,10 +15,10 @@ class App extends Component {
     }
 
     getBannerImg = () => {
-        let bannerImgIDs = ['boracayBanner','elNidoBanner'];
+        let bannerImgClasses = ['boracayBanner','elNidoBanner', 'palauiBanner','siargaoBanner'];
         let key = 0;
         setInterval(() => {
-            this.setState({bannerImgClass:bannerImgIDs[key++ % bannerImgIDs.length]})
+            this.setState({bannerImgClass:bannerImgClasses[key++ % bannerImgClasses.length]})
         },3000)
     }
 

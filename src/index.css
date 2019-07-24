@@ -1,14 +1,17 @@
 body {
     margin:0;
+    font-family:'Open Sans',sans-serif;
 }
 
-.boracayBanner, .elNidoBanner {
+.boracayBanner, .elNidoBanner, .siargaoBanner, .palauiBanner {
     width:100%;
     height:600px;
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center;
-    transition:all 0.4s linear;
+    -webkit-transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    transition:all 0.4s ease-in-out;
     text-align:center;
 }
 
@@ -18,6 +21,14 @@ body {
 
 .elNidoBanner {
     background-image:url('images/el-nido-bg.jpg');
+}
+
+.siargaoBanner {
+    background-image:url('images/siargao-bg.jpg');
+}
+
+.palauiBanner {
+    background-image:url('images/palaui-bg.jpg');
 }
 
 .siteTitle {
@@ -30,21 +41,50 @@ body {
     color:#ffffff;
     font-size:32px;
     font-weight:300;
-    font-family:'Open Sans',sans-serif;
     letter-spacing: 0.04em;
     margin-left:11px;
     margin-bottom: 8px;
     display:inline-block;
 }
 
-.searchForm {
+.searchFormContainer {
     margin-top:176px;
 }
 
-.searchForm h1 {
+.searchFormContainer h1 {
     color:#ffffff;
     font-size:52px;
     font-weight:300;
-    font-family:'Open Sans',sans-serif;
     letter-spacing: 0.04em;
+    margin-bottom: 27px;
+}
+
+.searchTextBox {
+    height:40px;
+    width:326px;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    appearance: none;
+    border:none;
+    outline:none;
+    padding: 0 14px;
+}
+
+.searchBtn {
+    text-transform: uppercase;
+    color:#ffffff;
+    font-weight:700;
+    height:40px;
+    width:121px;
+    background-color:#fd4f32;
+    border:none;
+    outline:none;
+    -webkit-transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    transition:all 0.4s ease-in-out;
+}
+
+.searchBtn:hover {
+    background-color:#fd8332;
+
 }
