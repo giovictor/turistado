@@ -1,7 +1,9 @@
 import React,{Component} from 'react';
-import axios from 'axios';
 
 import Header from './components/Header';
+import Destinations from './components/Destinations';
+import Subscription from './components/Subscription';
+import Footer from './components/Footer';
 class App extends Component {
     constructor(props) {
         super(props);
@@ -27,6 +29,9 @@ class App extends Component {
         return (
             <div className="app">
                 <Header bannerImgClass={bannerImgClass}/>
+                <Destinations/>
+                <Subscription/>
+                <Footer/>
             </div>
         );
     }

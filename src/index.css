@@ -59,7 +59,7 @@ body {
     margin-bottom: 27px;
 }
 
-.searchTextBox {
+.defaultTextBox {
     height:40px;
     width:326px;
     -webkit-appearance:none;
@@ -70,7 +70,7 @@ body {
     padding: 0 14px;
 }
 
-.searchBtn {
+.defaultBtn {
     text-transform: uppercase;
     color:#ffffff;
     font-weight:700;
@@ -79,12 +79,104 @@ body {
     background-color:#fd4f32;
     border:none;
     outline:none;
-    -webkit-transition:all 0.4s ease-in-out;
-    -moz-transition:all 0.4s ease-in-out;
-    transition:all 0.4s ease-in-out;
+    -webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    transition:all 0.2s ease-in-out;
 }
 
-.searchBtn:hover {
+.defaultBtn:hover {
     background-color:#fd8332;
-
 }
+
+/* Destinations */
+.destinations {
+    background-color:#eeeeee;
+    width:100%;
+    height:526px;
+    padding-top:55px;
+}
+
+.destinationTitle {
+    text-transform:uppercase;
+    font-size:16px;
+    font-family:'Montserrat', sans-serif;
+    font-weight:600;
+    color:#323232;
+    letter-spacing: 0.02em;
+    margin-bottom:3px;
+}
+
+.destinationTagLine {
+    font-size:15px;
+    color:#8b8b8b;
+    letter-spacing: 0.02em;
+    margin-bottom:35px;
+}
+
+.destinationThumbnail {
+    height:200px;
+    width:100%;
+}
+
+.destinationInfo {
+    background-color:#ffffff;
+    width:100%;
+    height:118px;
+}
+
+/* Subscriptions*/
+.subscription {
+    padding-top:70px;
+    height:539px;
+    width:100%;
+}
+
+.subscription h1 {
+    font-size:52px;
+    font-weight:300;
+    color:#323232;
+    margin-bottom:54px;
+}
+
+.subscriptionSections {
+    margin-bottom:55px;
+}
+
+.subscriptionSectionTitle, .subscriptionFormHeading {
+    text-transform:uppercase;
+    font-size:16px;
+    font-family:'Montserrat', sans-serif;
+    font-weight:600;
+    color:#323232;
+    letter-spacing: 0.02em;
+}
+
+.subscriptionFormHeading {
+    margin-bottom:23px;
+}
+
+.subscriptionSectionBody {
+    font-size:15px;
+    color:#8b8b8b;
+    letter-spacing: 0.02em;
+    text-align:justify;
+}
+
+.subscriptionFormContainer {
+    text-align:center;
+}
+
+.footer {
+    width:100%;
+    height:73px;
+    background-color:#eeeeee;
+    line-height:73px;
+}
+
+.footer p {
+    font-size:14px;
+    color:#8b8b8b;
+    letter-spacing:0.02em;
+    margin-bottom:0;
+}
+

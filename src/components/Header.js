@@ -1,9 +1,9 @@
 import React from 'react'
 
+import DefaultForm from './DefaultForm'
 import plane from '../images/plane.PNG'
 
 const Header = (props) => {
-
     return (
         <div className={props.bannerImgClass ? props.bannerImgClass : 'boracayBanner'}>
             <div className="container">
@@ -14,10 +14,7 @@ const Header = (props) => {
 
                 <div className="searchFormContainer">
                     <h1>Where will you go next?</h1>
-                    <form>
-                        <input type="text" className="searchTextBox" name="place" placeholder="Start typing..."/>
-                        <button type="button" className="searchBtn">Go</button> 
-                    </form>
+                    <DefaultForm name="search" placeholder="Start typing..." buttonText="Go" />
                 </div>
             </div>
         </div>
